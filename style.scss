@@ -1,0 +1,115 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #fdfcf6;
+$subColor: #bea300;
+$keyColor: #14c0c9;
+$fontColor: #4c4c4c;
+.nyantama {
+    background-image: url(./images/neko1.jpg);
+    height: 250px;
+    width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//Common Styles
+section {
+    padding: 60px 0;
+    .container {
+        width:90%;
+         @extend .block-center;
+    }
+}
+.abel {
+  font-family: 'Abel', sans-serif;
+}
+h2 {
+   @extend .abel;
+   font-size: 1.5rem;
+  
+ }
+ 
+  h2 {
+    color: $baseColor;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .box {
+    @include flex(1);
+    margin: 10px 0;                     // 上下にマージン
+    padding: 20px;
+    background-color: $baseColor;
+    @include border-radius(4px);
+    @include box-sizing(border-box);
+  }
+  h3 {
+    @extend .abel;
+    
+    color: $keyColor;
+    margin-bottom:10px;
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+  #nyanko{
+  background-color: $subColor;
+  .container {
+    @include display-flex;
+    justify-content: space-between;
+    @include flex-direction(column);    // スキルボックスを縦に並べる
+  }
+  }
+  // desktop
+@media (min-width: 768px) {
+
+
+  // Skills
+  #nyanko {
+    .container {
+      @include flex-direction(row);     // スキルボックスを横に並べる
+     justify-content: space-between;
+    }
+    .box {
+      margin: 0 10px;                   // 左右にマージン
+    }
+  }
+}
+.nyantama {
+    height: 500px;
+}
+.button-readmore {
+          margin: auto;
+          text-align: center;
+          padding: 5px 0;
+          width: 180px;
+          display: block;
+          color: #FFF;
+          font-weight: bold;
+          background-color: $keyColor;
+          @extend .abel;
+         
+          @include border-radius(4px);
+          font-size: 1rem;
+        }
+.works-box-inner { background-color: $baseColor;
+.text-center {
+    text-align:center;
+}
+}
+.works-box-inner {
+    .text-center {
+        h3 { 
+        margin-top: 20px;
+        }
+    }
+    
+}
+                    
