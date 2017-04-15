@@ -55,16 +55,16 @@ h3 {
     -webkit-flex-direction: column;
     flex-direction: column; }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #nyanko .container {
     -webkit-flex-direction: row;
     flex-direction: row;
     justify-content: space-between; }
   #nyanko .box {
     margin: 0 10px; } }
-.nyantama {
-  height: 500px; }
-
+@media (min-width: 769px) {
+  .nyantama {
+    height: 500px; } }
 .button-readmore {
   margin: auto;
   text-align: center;

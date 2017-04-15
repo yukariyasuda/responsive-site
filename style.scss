@@ -8,6 +8,8 @@ $baseColor: #fdfcf6;
 $subColor: #bea300;
 $keyColor: #14c0c9;
 $fontColor: #4c4c4c;
+
+
 .nyantama {
     background-image: url(./images/neko1.jpg);
     height: 250px;
@@ -15,6 +17,7 @@ $fontColor: #4c4c4c;
   background-size: cover;
   background-position: center center;
 }
+
 .block-center {
   display: block;
   margin-left: auto;
@@ -68,7 +71,7 @@ h2 {
   }
   }
   // desktop
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 
 
   // Skills
@@ -82,8 +85,12 @@ h2 {
     }
   }
 }
-.nyantama {
+@media(min-width:769px) {
+    .nyantama {
+       
     height: 500px;
+}
+
 }
 .button-readmore {
           margin: auto;
