@@ -4,7 +4,7 @@
   height: 250px;
   width: 100%;
   background-size: cover;
-  background-position: center center; }
+  background-position: top center; }
 
 .block-center, section .container {
   display: block;
@@ -64,6 +64,7 @@ h3 {
     margin: 0 10px; } }
 @media (min-width: 769px) {
   .nyantama {
+    background-position: top center;
     height: 500px; } }
 .button-readmore {
   margin: auto;

@@ -15,7 +15,7 @@ $fontColor: #4c4c4c;
     height: 250px;
     width: 100%;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
 }
 
 .block-center {
@@ -87,7 +87,7 @@ h2 {
 }
 @media(min-width:769px) {
     .nyantama {
-       
+    background-position: top center;   
     height: 500px;
 }
 
@@ -109,6 +109,7 @@ h2 {
 .works-box-inner { background-color: $baseColor;
 .text-center {
     text-align:center;
+    
 }
 }
 .works-box-inner {
